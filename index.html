@@ -14,13 +14,14 @@
     <!-- Vue app -->
     <div id="app">
         <!-- List for mail address-->
+        <button @click="generateMail">Generate</button>
+        <!-- List for mail address-->
         <ul>
             <!-- Single mail -->
-            <li>
-                {{ mailAddress }}
+            <li v-for="mail in mailArray">
+                {{ mail }}
             </li>  
         </ul>
-        <button @click="generate">Generate</button>
     </div>
 </body>
 </html>

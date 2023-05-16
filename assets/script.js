@@ -1,20 +1,20 @@
 const app = Vue.createApp({
 	data() {
 		return {
-			mailAddress: null
+            mailArray: [],
+            numberMail: 10,
 		};
 	},
 	methods: {
-		play() {
-			this.mailAddress = null
+        generateMail() {
+            for(let i = 0; i < this.numberMail; i++) {
+			this.mailArray = []
 			axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-				.then(serverResponse => this.mailAddress = serverResponse.data.response);
+				.then(serverResponse => this.mailArray.push(serverResponse.data.response));
+            }
 		},
 	},
 	computed: {
-		result() {
-			
-		},
 	},
 });
 
