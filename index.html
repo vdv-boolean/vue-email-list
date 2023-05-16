@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail list</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="assets/script.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Vue app -->
+    <div id="app">
+        <!-- List for mail address-->
+        <ul>
+            <!-- Single mail -->
+            <li>
+                {{ mailAddress }}
+            </li>  
+        </ul>
+        <button @click="generate">Generate</button>
+    </div>
+</body>
+</html>
