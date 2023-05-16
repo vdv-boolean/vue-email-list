@@ -14,8 +14,11 @@ const app = Vue.createApp({
             }
 		},
 	},
-	computed: {
-	},
+    mounted: function() {
+               // fullfill email list
+              
+                  this.generateMail();
+               }
 });
 
 app.mount('#app');
