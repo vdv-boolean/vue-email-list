@@ -1,8 +1,64 @@
-/* Browsere Reset */
+/************************************************
+General settings
+************************************************/
+
+/* Browser settings */
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/************************************************
+Body
+************************************************/
+
+body {
+    background-color: black;
+    color: greenyellow;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+}
+
+ul {
+    background-color: greenyellow;
+    margin: 1rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+button {
+    background: none;
+    color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+li {
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
 }
